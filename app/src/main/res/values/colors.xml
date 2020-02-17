@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18D773</color>
+    <color name="colorPrimaryDark">#118143</color>
+    <color name="colorAccent">#17750C</color>
+    <color name="textcardColor">#070606</color>
+    <color name="tabtextColor">#0E0505</color>
+    <color name="tabIndecateColor">#8A0000</color>
+    <color name="cardColor">#054E2D</color>
+</resources>

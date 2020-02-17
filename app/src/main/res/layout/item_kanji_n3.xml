@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/kanji_item_id_n3"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/read"
+        android:id="@+id/kanji_image_n3">
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#3F51B5"
+
+            android:id="@+id/lesson_no_kanji_n3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="@string/lesson_number"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
