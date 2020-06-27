@@ -1,44 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
+    app:elevation="0dp"
     android:layout_marginBottom="2dp"
     android:id="@+id/vocabulary_item_id"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
 
-    <ImageView
-        android:layout_margin="5dp"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:src="@drawable/read"
-        android:id="@+id/vocaulary_image">
 
-    </ImageView>
+    <androidx.cardview.widget.CardView
 
-
-    <LinearLayout
-        android:layout_margin="5dp"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp">
 
-        <TextView
-            android:textColor="#3F51B5"
 
-            android:id="@+id/lesson_no"
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/read"
+            android:id="@+id/vocaulary_image">
+
+        </ImageView>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            android:textSize="18sp"
-            android:gravity="center_vertical"
-            android:text="@string/lesson_number"
-            android:textStyle="bold">
+            <TextView
+                android:id="@+id/lesson_no"
 
-        </TextView>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
 
-    </LinearLayout>
+                android:text="@string/lesson_number"
+                android:textColor="#3F51B5"
+                android:textSize="22sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 
 </LinearLayout>

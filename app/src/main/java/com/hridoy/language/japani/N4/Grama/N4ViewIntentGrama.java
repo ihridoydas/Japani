@@ -1,13 +1,9 @@
-package com.hridoy.language.japani.N5.Voca;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.hridoy.language.japani.N4.Grama;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -17,16 +13,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.hridoy.language.japani.DatabaseAccess;
 import com.hridoy.language.japani.R;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
-public class N5ViewIntentVoca extends AppCompatActivity {
-
-
-    private TextToSpeech mTTS;
+public class N4ViewIntentGrama extends AppCompatActivity {
 
     private ListView listView;
 
@@ -41,36 +35,10 @@ public class N5ViewIntentVoca extends AppCompatActivity {
     private static DatabaseAccess instance;
     Cursor c=null;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_n5_view_intent_voca);
-
-
-
-
-
-
-
-        mTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status == TextToSpeech.SUCCESS) {
-                    int result = mTTS.setLanguage(Locale.JAPAN);
-                    mTTS.setSpeechRate(0.6f);
-
-                    if (result == TextToSpeech.LANG_MISSING_DATA
-                            || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                        Log.e("TTS", "Language not supported");
-
-                    }
-                } else {
-                    Log.e("TTS", "Initialization failed");
-                }
-            }
-        });
-
+        setContentView(R.layout.activity_n4_view_intent_grama);
 
 
 
@@ -81,231 +49,278 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
 
 
-        if(getIntent().hasExtra("Lesson1")){
+        if(getIntent().hasExtra("LessonN4Grama1")){
 
-            String lesson = getIntent().getStringExtra("Lesson1");
+            String lesson1 = getIntent().getStringExtra("LessonN4Grama1");
 
-            TextView name = findViewById(R.id.lesson_num);
-            name.setText(lesson);
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
+            name.setText(lesson1);
 
-            Lesson1();
+            LessonN4Grama1();
         }
 
-        else if(getIntent().hasExtra("Lesson2")){
 
-            String lesson = getIntent().getStringExtra("Lesson2");
+       else if(getIntent().hasExtra("LessonN4Grama2")){
 
-            TextView name = findViewById(R.id.lesson_num);
+            String lesson = getIntent().getStringExtra("LessonN4Grama2");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson2();
+            LessonN4Grama2();
         }
-        else if(getIntent().hasExtra("Lesson3")){
 
-            String lesson = getIntent().getStringExtra("Lesson3");
+        else if(getIntent().hasExtra("LessonN4Grama3")){
 
-            TextView name = findViewById(R.id.lesson_num);
+            String lesson = getIntent().getStringExtra("LessonN4Grama3");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson3();
+            LessonN4Grama3();
         }
-        else if(getIntent().hasExtra("Lesson4")){
 
-            String lesson = getIntent().getStringExtra("Lesson4");
+        else if(getIntent().hasExtra("LessonN4Grama4")){
 
-            TextView name = findViewById(R.id.lesson_num);
+            String lesson = getIntent().getStringExtra("LessonN4Grama4");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson4();
+            LessonN4Grama4();
         }
-        else if(getIntent().hasExtra("Lesson5")){
 
-            String lesson = getIntent().getStringExtra("Lesson5");
+        else if(getIntent().hasExtra("LessonN4Grama5")){
 
-            TextView name = findViewById(R.id.lesson_num);
+            String lesson = getIntent().getStringExtra("LessonN4Grama5");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson5();
+            LessonN4Grama5();
         }
-        else if(getIntent().hasExtra("Lesson6")){
 
-            String lesson = getIntent().getStringExtra("Lesson6");
+        else if(getIntent().hasExtra("LessonN4Grama6")){
 
-            TextView name = findViewById(R.id.lesson_num);
+            String lesson = getIntent().getStringExtra("LessonN4Grama6");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson6();
+            LessonN4Grama6();
         }
-        else if(getIntent().hasExtra("Lesson7")){
 
-            String lesson = getIntent().getStringExtra("Lesson7");
+        else if(getIntent().hasExtra("LessonN4Grama7")){
 
-            TextView name = findViewById(R.id.lesson_num);
+            String lesson = getIntent().getStringExtra("LessonN4Grama7");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson7();
+            LessonN4Grama7();
         }
-        else if(getIntent().hasExtra("Lesson8")){
 
-            String lesson = getIntent().getStringExtra("Lesson8");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama8")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama8");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson8();
+            LessonN4Grama8();
         }
-        else if(getIntent().hasExtra("Lesson9")){
 
-            String lesson = getIntent().getStringExtra("Lesson9");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama9")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama9");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson9();
+            LessonN4Grama9();
         }
-        else if(getIntent().hasExtra("Lesson10")){
 
-            String lesson = getIntent().getStringExtra("Lesson10");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama10")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama10");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson10();
+            LessonN4Grama10();
         }
-        else if(getIntent().hasExtra("Lesson11")){
 
-            String lesson = getIntent().getStringExtra("Lesson11");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama11")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama11");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson11();
+            LessonN4Grama11();
         }
-        else if(getIntent().hasExtra("Lesson12")){
 
-            String lesson = getIntent().getStringExtra("Lesson12");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama12")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama12");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson12();
+            LessonN4Grama12();
         }
-        else if(getIntent().hasExtra("Lesson13")){
 
-            String lesson = getIntent().getStringExtra("Lesson13");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama13")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama13");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson13();
+            LessonN4Grama13();
         }
-        else if(getIntent().hasExtra("Lesson14")){
 
-            String lesson = getIntent().getStringExtra("Lesson14");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama14")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama14");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson14();
+            LessonN4Grama14();
         }
-        else if(getIntent().hasExtra("Lesson15")){
 
-            String lesson = getIntent().getStringExtra("Lesson15");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama15")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama15");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson15();
+            LessonN4Grama15();
         }
-        else if(getIntent().hasExtra("Lesson16")){
 
-            String lesson = getIntent().getStringExtra("Lesson16");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama16")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama16");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson16();
+            LessonN4Grama16();
         }
-        else if(getIntent().hasExtra("Lesson17")){
 
-            String lesson = getIntent().getStringExtra("Lesson17");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama17")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama17");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson17();
+            LessonN4Grama17();
         }
-        else if(getIntent().hasExtra("Lesson18")){
 
-            String lesson = getIntent().getStringExtra("Lesson18");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama18")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama18");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson18();
+            LessonN4Grama18();
         }
-        else if(getIntent().hasExtra("Lesson19")){
 
-            String lesson = getIntent().getStringExtra("Lesson19");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama19")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama19");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson19();
+            LessonN4Grama19();
         }
-        else if(getIntent().hasExtra("Lesson20")){
 
-            String lesson = getIntent().getStringExtra("Lesson20");
 
-            TextView name = findViewById(R.id.lesson_num);
+        else if(getIntent().hasExtra("LessonN4Grama20")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama20");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson20();
+            LessonN4Grama20();
         }
-        else if(getIntent().hasExtra("Lesson21")){
 
-            String lesson = getIntent().getStringExtra("Lesson21");
 
-            TextView name = findViewById(R.id.lesson_num);
+
+        else if(getIntent().hasExtra("LessonN4Grama21")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama21");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson21();
+            LessonN4Grama21();
         }
-        else if(getIntent().hasExtra("Lesson22")){
 
-            String lesson = getIntent().getStringExtra("Lesson22");
 
-            TextView name = findViewById(R.id.lesson_num);
+
+        else if(getIntent().hasExtra("LessonN4Grama22")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama22");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson22();
+            LessonN4Grama22();
         }
-        else if(getIntent().hasExtra("Lesson23")){
 
-            String lesson = getIntent().getStringExtra("Lesson23");
 
-            TextView name = findViewById(R.id.lesson_num);
+
+        else if(getIntent().hasExtra("LessonN4Grama23")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama23");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson23();
+            LessonN4Grama23();
         }
-        else if(getIntent().hasExtra("Lesson24")){
 
-            String lesson = getIntent().getStringExtra("Lesson24");
 
-            TextView name = findViewById(R.id.lesson_num);
+
+        else if(getIntent().hasExtra("LessonN4Grama24")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama24");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson24();
+            LessonN4Grama24();
         }
-        else if(getIntent().hasExtra("Lesson25")){
 
-            String lesson = getIntent().getStringExtra("Lesson25");
 
-            TextView name = findViewById(R.id.lesson_num);
+
+        else if(getIntent().hasExtra("LessonN4Grama25")){
+
+            String lesson = getIntent().getStringExtra("LessonN4Grama25");
+
+            TextView name = findViewById(R.id.lesson_num_n4_grammer);
             name.setText(lesson);
 
-            Lesson25();
+            LessonN4Grama25();
         }
 
 
@@ -320,8 +335,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
     }
 
 
-
-    private void Lesson1() {
+    private void LessonN4Grama1() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -329,7 +343,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson1();
+        c = DatabaseAccess.showN4GramaLesson1();
 
         if(c.getCount()==0){
 
@@ -338,85 +352,8 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
-            }
-        }
 
-        final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.list_item,R.id.textViewId,listData);
-
-        listView.setAdapter(adapter);
-
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
-                return false;
-            }
-        });
-
-
-
-
-
-    }
-
-    private void Lesson2() {
-
-
-        ArrayList<String> listData = new ArrayList<>();
-
-        DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
-        databaseAccess.open();
-
-        c = DatabaseAccess.showLesson2();
-
-        if(c.getCount()==0){
-
-            Toast.makeText(getApplicationContext(),"NO Data Available in Database ",Toast.LENGTH_LONG).show();
-        }else{
-
-            while (c.moveToNext()){
-
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
-            }
-        }
-
-        final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.list_item,R.id.textViewId,listData);
-
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
-    }
-
-    private void Lesson3() {
-
-
-        ArrayList<String> listData = new ArrayList<>();
-
-        DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
-        databaseAccess.open();
-
-        c = DatabaseAccess.showLesson3();
-
-        if(c.getCount()==0){
-
-            Toast.makeText(getApplicationContext(),"NO Data Available in Database ",Toast.LENGTH_LONG).show();
-        }else{
-
-            while (c.moveToNext()){
-
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -430,12 +367,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
+
+
+              Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson4() {
+
+    private void LessonN4Grama2() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -443,7 +383,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson4();
+        c = DatabaseAccess.showN4GramaLesson2();
 
         if(c.getCount()==0){
 
@@ -452,7 +392,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -466,12 +406,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson5() {
+
+    private void LessonN4Grama3() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -479,7 +422,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson5();
+        c = DatabaseAccess.showN4GramaLesson3();
 
         if(c.getCount()==0){
 
@@ -488,7 +431,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -502,12 +445,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson6() {
+
+    private void LessonN4Grama4() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -515,7 +461,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson6();
+        c = DatabaseAccess.showN4GramaLesson4();
 
         if(c.getCount()==0){
 
@@ -524,7 +470,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -538,12 +484,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson7() {
+
+    private void LessonN4Grama5() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -551,7 +500,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson7();
+        c = DatabaseAccess.showN4GramaLesson5();
 
         if(c.getCount()==0){
 
@@ -560,7 +509,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -574,12 +523,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson8() {
+
+    private void LessonN4Grama6() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -587,7 +539,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson8();
+        c = DatabaseAccess.showN4GramaLesson6();
 
         if(c.getCount()==0){
 
@@ -596,7 +548,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -610,12 +562,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson9() {
+
+    private void LessonN4Grama7() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -623,7 +578,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson9();
+        c = DatabaseAccess.showN4GramaLesson7();
 
         if(c.getCount()==0){
 
@@ -632,7 +587,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -646,12 +601,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson10() {
+
+    private void LessonN4Grama8() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -659,7 +617,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson10();
+        c = DatabaseAccess.showN4GramaLesson8();
 
         if(c.getCount()==0){
 
@@ -668,7 +626,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -682,12 +640,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson11() {
+
+    private void LessonN4Grama9() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -695,7 +656,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson11();
+        c = DatabaseAccess.showN4GramaLesson9();
 
         if(c.getCount()==0){
 
@@ -704,7 +665,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -718,12 +679,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson12() {
+
+    private void LessonN4Grama10() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -731,7 +695,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson12();
+        c = DatabaseAccess.showN4GramaLesson10();
 
         if(c.getCount()==0){
 
@@ -740,7 +704,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -754,12 +718,17 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson13() {
+
+
+
+    private void LessonN4Grama11() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -767,7 +736,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson13();
+        c = DatabaseAccess.showN4GramaLesson11();
 
         if(c.getCount()==0){
 
@@ -776,7 +745,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -790,12 +759,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson14() {
+
+    private void LessonN4Grama12() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -803,7 +775,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson14();
+        c = DatabaseAccess.showN4GramaLesson12();
 
         if(c.getCount()==0){
 
@@ -812,7 +784,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -826,12 +798,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson15() {
+
+    private void LessonN4Grama13() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -839,7 +814,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson15();
+        c = DatabaseAccess.showN4GramaLesson13();
 
         if(c.getCount()==0){
 
@@ -848,7 +823,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -862,12 +837,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson16() {
+
+    private void LessonN4Grama14() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -875,7 +853,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson16();
+        c = DatabaseAccess.showN4GramaLesson14();
 
         if(c.getCount()==0){
 
@@ -884,7 +862,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -898,12 +876,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson17() {
+
+    private void LessonN4Grama15() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -911,7 +892,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson17();
+        c = DatabaseAccess.showN4GramaLesson15();
 
         if(c.getCount()==0){
 
@@ -920,7 +901,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -934,12 +915,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson18() {
+
+    private void LessonN4Grama16() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -947,7 +931,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson18();
+        c = DatabaseAccess.showN4GramaLesson16();
 
         if(c.getCount()==0){
 
@@ -956,7 +940,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -970,12 +954,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson19() {
+
+    private void LessonN4Grama17() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -983,7 +970,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson19();
+        c = DatabaseAccess.showN4GramaLesson17();
 
         if(c.getCount()==0){
 
@@ -992,7 +979,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -1006,12 +993,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson20() {
+
+    private void LessonN4Grama18() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -1019,7 +1009,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson20();
+        c = DatabaseAccess.showN4GramaLesson18();
 
         if(c.getCount()==0){
 
@@ -1028,7 +1018,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -1042,12 +1032,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson21() {
+
+    private void LessonN4Grama19() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -1055,7 +1048,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson21();
+        c = DatabaseAccess.showN4GramaLesson19();
 
         if(c.getCount()==0){
 
@@ -1064,7 +1057,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -1078,12 +1071,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson22() {
+
+    private void LessonN4Grama20() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -1091,7 +1087,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson22();
+        c = DatabaseAccess.showN4GramaLesson20();
 
         if(c.getCount()==0){
 
@@ -1100,7 +1096,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -1114,12 +1110,17 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson23() {
+
+
+
+    private void LessonN4Grama21() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -1127,7 +1128,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson23();
+        c = DatabaseAccess.showN4GramaLesson21();
 
         if(c.getCount()==0){
 
@@ -1136,7 +1137,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -1150,12 +1151,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson24() {
+
+    private void LessonN4Grama22() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -1163,7 +1167,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson24();
+        c = DatabaseAccess.showN4GramaLesson22();
 
         if(c.getCount()==0){
 
@@ -1172,7 +1176,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -1186,12 +1190,15 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
     }
-    private void Lesson25() {
+
+    private void LessonN4Grama23() {
 
 
         ArrayList<String> listData = new ArrayList<>();
@@ -1199,7 +1206,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson25();
+        c = DatabaseAccess.showN4GramaLesson23();
 
         if(c.getCount()==0){
 
@@ -1208,7 +1215,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
             while (c.moveToNext()){
 
-                listData.add(c.getString(0)+" \t "+c.getString(1) + " \t "+c.getString(2)+ " \t "+c.getString(3)+ " \t "+c.getString(4));
+                listData.add(c.getString(0)+" \t "+c.getString(1));
             }
         }
 
@@ -1222,6 +1229,86 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
 
+
+
+                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
+
+            }
+        });
+    }
+
+    private void LessonN4Grama24() {
+
+
+        ArrayList<String> listData = new ArrayList<>();
+
+        DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
+        databaseAccess.open();
+
+        c = DatabaseAccess.showN4GramaLesson24();
+
+        if(c.getCount()==0){
+
+            Toast.makeText(getApplicationContext(),"NO Data Available in Database ",Toast.LENGTH_LONG).show();
+        }else{
+
+            while (c.moveToNext()){
+
+                listData.add(c.getString(0)+" \t "+c.getString(1));
+            }
+        }
+
+        final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.list_item,R.id.textViewId,listData);
+
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                String selectedValue =parent.getItemAtPosition(position).toString();
+
+
+
+                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
+
+            }
+        });
+    }
+
+    private void LessonN4Grama25() {
+
+
+        ArrayList<String> listData = new ArrayList<>();
+
+        DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
+        databaseAccess.open();
+
+        c = DatabaseAccess.showN4GramaLesson25();
+
+        if(c.getCount()==0){
+
+            Toast.makeText(getApplicationContext(),"NO Data Available in Database ",Toast.LENGTH_LONG).show();
+        }else{
+
+            while (c.moveToNext()){
+
+                listData.add(c.getString(0)+" \t "+c.getString(1));
+            }
+        }
+
+        final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.list_item,R.id.textViewId,listData);
+
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                String selectedValue =parent.getItemAtPosition(position).toString();
+
+
+
                 Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
@@ -1231,17 +1318,4 @@ public class N5ViewIntentVoca extends AppCompatActivity {
 
 
 
-
-    //---------------------------------------------------N5-----------------------------------------------------------
-
-
-    @Override
-    protected void onDestroy() {
-        if (mTTS != null) {
-            mTTS.stop();
-            mTTS.shutdown();
-        }
-
-        super.onDestroy();
-    }
 }

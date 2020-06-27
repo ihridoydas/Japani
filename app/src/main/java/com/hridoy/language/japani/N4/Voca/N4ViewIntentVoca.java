@@ -1,4 +1,4 @@
-package com.hridoy.language.japani.N5.Voca;
+package com.hridoy.language.japani.N4.Voca;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,7 +23,8 @@ import com.hridoy.language.japani.R;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class N5ViewIntentVoca extends AppCompatActivity {
+public class N4ViewIntentVoca extends AppCompatActivity {
+
 
 
     private TextToSpeech mTTS;
@@ -41,11 +42,10 @@ public class N5ViewIntentVoca extends AppCompatActivity {
     private static DatabaseAccess instance;
     Cursor c=null;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_n5_view_intent_voca);
+        setContentView(R.layout.activity_n4_view_intent_voca);
 
 
 
@@ -77,7 +77,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         listView= findViewById(R.id.listViewId);
 
 
-//----------------------N5---------------------------------------------------------
+//----------------------N4---------------------------------------------------------
 
 
 
@@ -329,7 +329,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson1();
+        c = DatabaseAccess.showN4Lesson1();
 
         if(c.getCount()==0){
 
@@ -370,7 +370,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson2();
+        c = DatabaseAccess.showN4Lesson2();
 
         if(c.getCount()==0){
 
@@ -407,7 +407,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson3();
+        c = DatabaseAccess.showN4Lesson3();
 
         if(c.getCount()==0){
 
@@ -443,7 +443,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson4();
+        c = DatabaseAccess.showN4Lesson4();
 
         if(c.getCount()==0){
 
@@ -479,7 +479,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson5();
+        c = DatabaseAccess.showN4Lesson5();
 
         if(c.getCount()==0){
 
@@ -515,7 +515,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson6();
+        c = DatabaseAccess.showN4Lesson6();
 
         if(c.getCount()==0){
 
@@ -551,7 +551,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson7();
+        c = DatabaseAccess.showN4Lesson7();
 
         if(c.getCount()==0){
 
@@ -587,7 +587,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson8();
+        c = DatabaseAccess.showN4Lesson8();
 
         if(c.getCount()==0){
 
@@ -623,7 +623,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson9();
+        c = DatabaseAccess.showN4Lesson9();
 
         if(c.getCount()==0){
 
@@ -659,7 +659,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson10();
+        c = DatabaseAccess.showN4Lesson10();
 
         if(c.getCount()==0){
 
@@ -695,7 +695,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson11();
+        c = DatabaseAccess.showN4Lesson11();
 
         if(c.getCount()==0){
 
@@ -731,7 +731,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson12();
+        c = DatabaseAccess.showN4Lesson12();
 
         if(c.getCount()==0){
 
@@ -767,7 +767,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson13();
+        c = DatabaseAccess.showN4Lesson13();
 
         if(c.getCount()==0){
 
@@ -803,7 +803,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson14();
+        c = DatabaseAccess.showN4Lesson14();
 
         if(c.getCount()==0){
 
@@ -839,7 +839,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson15();
+        c = DatabaseAccess.showN4Lesson15();
 
         if(c.getCount()==0){
 
@@ -875,7 +875,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson16();
+        c = DatabaseAccess.showN4Lesson16();
 
         if(c.getCount()==0){
 
@@ -911,7 +911,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson17();
+        c = DatabaseAccess.showN4Lesson17();
 
         if(c.getCount()==0){
 
@@ -947,7 +947,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson18();
+        c = DatabaseAccess.showN4Lesson18();
 
         if(c.getCount()==0){
 
@@ -983,7 +983,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson19();
+        c = DatabaseAccess.showN4Lesson19();
 
         if(c.getCount()==0){
 
@@ -1019,7 +1019,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson20();
+        c = DatabaseAccess.showN4Lesson20();
 
         if(c.getCount()==0){
 
@@ -1055,7 +1055,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson21();
+        c = DatabaseAccess.showN4Lesson21();
 
         if(c.getCount()==0){
 
@@ -1091,7 +1091,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson22();
+        c = DatabaseAccess.showN4Lesson22();
 
         if(c.getCount()==0){
 
@@ -1127,7 +1127,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson23();
+        c = DatabaseAccess.showN4Lesson23();
 
         if(c.getCount()==0){
 
@@ -1163,7 +1163,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson24();
+        c = DatabaseAccess.showN4Lesson24();
 
         if(c.getCount()==0){
 
@@ -1199,7 +1199,7 @@ public class N5ViewIntentVoca extends AppCompatActivity {
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
-        c = DatabaseAccess.showLesson25();
+        c = DatabaseAccess.showN4Lesson25();
 
         if(c.getCount()==0){
 

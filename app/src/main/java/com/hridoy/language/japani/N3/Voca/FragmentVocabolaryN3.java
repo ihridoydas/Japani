@@ -62,20 +62,6 @@ public class FragmentVocabolaryN3 extends Fragment {
         lstVocabularyN3.add(new VocabularyN3("Lesson 08",R.drawable.read));
         lstVocabularyN3.add(new VocabularyN3("Lesson 09",R.drawable.read));
         lstVocabularyN3.add(new VocabularyN3("Lesson 10",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 11",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 12",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 13",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 14",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 15",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 16",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 17",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 18",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 19",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 20",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 21",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 22",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 23",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 24",R.drawable.read));
-        lstVocabularyN3.add(new VocabularyN3("Lesson 25",R.drawable.read));
+
     }
 }

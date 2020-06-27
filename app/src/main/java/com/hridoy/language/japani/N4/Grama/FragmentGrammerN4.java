@@ -51,30 +51,30 @@ public class FragmentGrammerN4 extends Fragment {
 
         lstGrammer=new ArrayList<>();
 
-        lstGrammer.add(new GrammarN4("Lesson 01",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 02",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 03",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 04",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 05",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 06",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 07",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 08",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 09",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 10",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 11",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 12",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 13",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 14",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 15",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 16",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 17",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 18",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 19",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 20",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 21",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 22",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 23",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 24",R.drawable.read));
-        lstGrammer.add(new GrammarN4("Lesson 25",R.drawable.read));
+        lstGrammer.add(new GrammarN4("Lesson 01",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 02",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 03",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 04",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 05",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 06",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 07",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 08",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 09",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 10",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 11",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 12",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 13",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 14",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 15",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 16",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 17",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 18",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 19",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 20",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 21",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 22",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 23",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 24",R.drawable.grama));
+        lstGrammer.add(new GrammarN4("Lesson 25",R.drawable.grama));
     }
 }

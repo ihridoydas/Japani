@@ -1,6 +1,7 @@
 package com.hridoy.language.japani.N3.Voca;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hridoy.language.japani.N5.Voca.N5ViewIntentVoca;
 import com.hridoy.language.japani.R;
 
 import java.util.List;
@@ -40,7 +42,114 @@ public class RecyclerVewAdapterN3 extends RecyclerView.Adapter<RecyclerVewAdapte
         vHolder.item_vocabulary_n3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, " example"+String.valueOf(vHolder.getAdapterPosition()), Toast.LENGTH_LONG).show();
+                if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 01"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson1",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 02"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson2",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 03"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson3",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 04"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson4",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 05"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson5",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 06"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson6",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 07"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson7",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 08"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson8",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 09"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson9",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+                else if(mData.get(vHolder.getAdapterPosition()).getName()=="Lesson 10"){
+                    Intent intent = new Intent(mContext, N3ViewIntentVoca.class);
+
+                    intent.putExtra("Lesson10",mData.get(vHolder.getAdapterPosition()).getName());
+                    mContext.startActivity(intent);
+
+
+
+                }
+
+
+                else{
+                    Toast.makeText(mContext, "No Data Availebal", Toast.LENGTH_LONG).show();
+
+                }
             }
         });
 

@@ -316,7 +316,7 @@ public class RecyclerVewAdapter extends RecyclerView.Adapter<RecyclerVewAdapter.
 
                 }
 
-                //Toast.makeText(mContext, "Toast example"+String.valueOf(vHolder.getAdapterPosition()), Toast.LENGTH_LONG).show();
+                //Toast.makeText(maContext, "Toast example"+String.valueOf(vHolder.getAdapterPosition()), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -338,7 +338,6 @@ public class RecyclerVewAdapter extends RecyclerView.Adapter<RecyclerVewAdapter.
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-
 
 
 

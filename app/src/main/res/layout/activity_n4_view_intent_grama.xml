@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".N5.Grama.N5ViewIntentGrama">
+    tools:context=".N4.Grama.N4ViewIntentGrama">
 
 
 
     <TextView
         android:textColor="#3F51B5"
-
-        android:id="@+id/lesson_num_n5_grammer"
+        android:id="@+id/lesson_num_n4_grammer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -26,6 +25,6 @@
     <ListView
         android:id="@+id/listViewId"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

@@ -56,30 +56,13 @@ public class FragmentKanji extends Fragment {
 
         lstKanji=new ArrayList<>();
 
-        lstKanji.add(new Kanji("Lesson 01",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 02",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 03",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 04",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 05",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 06",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 07",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 08",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 09",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 10",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 11",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 12",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 13",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 14",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 15",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 16",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 17",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 18",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 19",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 20",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 21",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 22",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 23",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 24",R.drawable.read));
-        lstKanji.add(new Kanji("Lesson 25",R.drawable.read));
+        lstKanji.add(new Kanji("Lesson 01",R.drawable.kanji));
+        lstKanji.add(new Kanji("Lesson 02",R.drawable.kanji));
+        lstKanji.add(new Kanji("Lesson 03",R.drawable.kanji));
+        lstKanji.add(new Kanji("Lesson 04",R.drawable.kanji));
+        lstKanji.add(new Kanji("Lesson 05",R.drawable.kanji));
+        lstKanji.add(new Kanji("Lesson 06",R.drawable.kanji));
+        lstKanji.add(new Kanji("Lesson 07",R.drawable.kanji));
+        lstKanji.add(new Kanji("Lesson 08",R.drawable.kanji));
     }
 }
