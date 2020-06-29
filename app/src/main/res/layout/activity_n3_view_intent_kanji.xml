@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    tools:context=".N3.kanji.N3ViewIntentKanji">
+
+
+    <TextView
+        android:textColor="#f7f7f7"
+        android:background="@color/colorPrimary"
+
+
+        android:id="@+id/lesson_num_n3_kanji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="@string/lesson_number"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/smapletxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#f7f7f7"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:shadowRadius="@integer/config_navAnimTime"
+        android:paddingLeft="10dp"
+        android:text="# |   Kanji   |   Onyomi  |   Kunyomi |    Kanji Meaning"
+
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+    <ListView
+        android:id="@+id/listViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

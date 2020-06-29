@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -56,7 +57,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         if(v.getId()==R.id.n1){
 
-            startActivity(new Intent(getActivity(), N1Activity.class));
+            Toast.makeText(getActivity(), "Available on Next Update",
+                    Toast.LENGTH_LONG).show();
+           // startActivity(new Intent(getActivity(), N1Activity.class));
 
 
         }
@@ -65,7 +68,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         else if(v.getId()==R.id.n2){
 
-            startActivity(new Intent(getActivity(), N2Activity.class));
+            Toast.makeText(getActivity(), "Available on Next Update",
+                    Toast.LENGTH_LONG).show();
+
+            //startActivity(new Intent(getActivity(), N2Activity.class));
         }
 
 

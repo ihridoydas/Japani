@@ -2,6 +2,7 @@ package com.hridoy.language.japani.N5.Grama;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -15,6 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.hridoy.language.japani.CardViewShow;
 import com.hridoy.language.japani.DatabaseAccess;
 import com.hridoy.language.japani.R;
 
@@ -24,7 +26,7 @@ public class N5ViewIntentGrama extends AppCompatActivity {
 
     private ListView listView;
 
-    public EditText name;
+    public String name;
 
     public Button query_button;
     public TextView result_address;
@@ -338,12 +340,14 @@ public class N5ViewIntentGrama extends AppCompatActivity {
     private void LessonN5Grama1() {
 
 
-        ArrayList<String> listData = new ArrayList<>();
+        final ArrayList<String> listData = new ArrayList<>();
+
 
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
 
         c = DatabaseAccess.showN5GramaLesson1();
+
 
         if(c.getCount()==0){
 
@@ -353,22 +357,38 @@ public class N5ViewIntentGrama extends AppCompatActivity {
             while (c.moveToNext()){
 
                 listData.add(c.getString(0)+" \t "+c.getString(1));
+
+
+
             }
         }
 
         final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.list_item,R.id.textViewId,listData);
 
+
         listView.setAdapter(adapter);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
+             String selectedValue =parent.getItemAtPosition(position).toString();
 
 
 
-              Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
+
+
+                Intent intent = new Intent(N5ViewIntentGrama.this, CardViewShow.class);
+                intent.putExtra("showValue", selectedValue);
+                startActivity(intent);
+
+
+
+
+
+
+             //Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });
@@ -407,7 +427,8 @@ public class N5ViewIntentGrama extends AppCompatActivity {
 
 
 
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
+
+              Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
 
             }
         });

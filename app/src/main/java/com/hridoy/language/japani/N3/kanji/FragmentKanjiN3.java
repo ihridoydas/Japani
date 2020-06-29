@@ -68,15 +68,6 @@ public class FragmentKanjiN3 extends Fragment {
         lstKanjiN3.add(new KanjiN3("Lesson 13",R.drawable.kanji));
         lstKanjiN3.add(new KanjiN3("Lesson 14",R.drawable.kanji));
         lstKanjiN3.add(new KanjiN3("Lesson 15",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 16",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 17",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 18",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 19",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 20",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 21",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 22",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 23",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 24",R.drawable.kanji));
-        lstKanjiN3.add(new KanjiN3("Lesson 25",R.drawable.kanji));
+
     }
 }

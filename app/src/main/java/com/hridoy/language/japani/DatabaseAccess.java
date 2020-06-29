@@ -1077,5 +1077,118 @@ public class DatabaseAccess {
 
 //--------------------N3 Grammer---------------------------------------
 
+//--------------------N3 Kanji---------------------------------------
+
+
+
+    public static Cursor showN3KanjiLesson1(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson1 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN3KanjiLesson2(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson2 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN3KanjiLesson3(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson3 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN3KanjiLesson4(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson4 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN3KanjiLesson5(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson5 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN3KanjiLesson6(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson6 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN3KanjiLesson7(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson7 ",null);
+
+        return c;
+    }
+    public static Cursor showN3KanjiLesson8(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson8 ",null);
+
+        return c;
+    }
+    public static Cursor showN3KanjiLesson9(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson9 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN3KanjiLesson10(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson10 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN3KanjiLesson11(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson11 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN3KanjiLesson12(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson12 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN3KanjiLesson13(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson13 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN3KanjiLesson14(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson14 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN3KanjiLesson15(){
+
+        c= db.rawQuery("SELECT * FROM N3klesson15 ",null);
+
+        return c;
+    }
+//--------------------N3 Kanji---------------------------------------
+
 
 }
