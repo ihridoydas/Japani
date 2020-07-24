@@ -8,6 +8,10 @@
     android:background="#f7f7f7"
     tools:context=".N4.kanji.N4ViewIntentKanji">
 
+    <include
+        layout="@layout/appbarbangla"/>
+
+
 
     <TextView
         android:textColor="#f7f7f7"

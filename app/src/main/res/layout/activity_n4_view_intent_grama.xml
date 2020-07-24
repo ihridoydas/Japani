@@ -7,6 +7,9 @@
     android:orientation="vertical"
     tools:context=".N4.Grama.N4ViewIntentGrama">
 
+    <include
+        layout="@layout/appbarbangla"/>
+
 
 
     <TextView

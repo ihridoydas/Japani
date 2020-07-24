@@ -5,7 +5,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".N4.N4Activity">
+    tools:context=".N3.N3Activity">
+
+
+    <include
+        layout="@layout/appbarbanglabutton"/>
 
 
     <com.google.android.material.tabs.TabLayout

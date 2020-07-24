@@ -1,8 +1,8 @@
 package com.hridoy.language.japani.N5.Grama;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -11,18 +11,18 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hridoy.language.japani.CardViewShow;
 import com.hridoy.language.japani.DatabaseAccess;
 import com.hridoy.language.japani.R;
 
 import java.util.ArrayList;
 
 public class N5ViewIntentGrama extends AppCompatActivity {
+
+    private Toolbar toolbar;
 
     private ListView listView;
 
@@ -42,9 +42,19 @@ public class N5ViewIntentGrama extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_n5_view_intent_grama);
 
+        toolbar = findViewById(R.id.mytoolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
         listView= findViewById(R.id.listViewId);
+
+
+
+
+
 
 
 //----------------------N5---------------------------------------------------------
@@ -326,6 +336,12 @@ public class N5ViewIntentGrama extends AppCompatActivity {
         }
 
 
+        //Bangla Start
+
+
+
+
+        // //Bangla End
 
 
 
@@ -335,6 +351,18 @@ public class N5ViewIntentGrama extends AppCompatActivity {
 
 
     }
+
+
+
+
+
+
+    //Bangla
+
+
+
+
+    //End Bangla
 
 
     private void LessonN5Grama1() {
@@ -369,30 +397,10 @@ public class N5ViewIntentGrama extends AppCompatActivity {
         listView.setAdapter(adapter);
 
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-             String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-
-
-                Intent intent = new Intent(N5ViewIntentGrama.this, CardViewShow.class);
-                intent.putExtra("showValue", selectedValue);
-                startActivity(intent);
-
-
-
-
-
-
-             //Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
+
+
+
 
     private void LessonN5Grama2() {
 
@@ -419,19 +427,7 @@ public class N5ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-
-              Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN5Grama3() {
@@ -459,18 +455,7 @@ public class N5ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN5Grama4() {
@@ -614,6 +599,16 @@ public class N5ViewIntentGrama extends AppCompatActivity {
         final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.list_item,R.id.textViewId,listData);
 
         listView.setAdapter(adapter);
+
+
+        listView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+            }
+        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

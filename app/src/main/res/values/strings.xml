@@ -8,10 +8,12 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
+    <string name="menu_gallery">Japanese Alphabet </string>
+    <string name="menu_slideshow">Listening</string>
+    <string name="menu_tools">Embassy Preparation</string>
     <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_send">About Developer</string>
     <string name="lesson_number">Lesson Number</string>
+    <string name="bangla"> বাংলা গ্রামার</string>
+    <string name="english">English</string>
 </resources>

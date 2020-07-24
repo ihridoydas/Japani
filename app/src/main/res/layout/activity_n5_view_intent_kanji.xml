@@ -9,6 +9,10 @@
     tools:context=".N5.kanji.N5ViewIntentKanji">
 
 
+    <include
+        layout="@layout/appbarbangla"/>
+
+
     <TextView
         android:textColor="#f7f7f7"
         android:background="@color/colorPrimary"

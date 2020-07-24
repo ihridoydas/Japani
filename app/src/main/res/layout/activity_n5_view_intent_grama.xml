@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context=".N5.Grama.N5ViewIntentGrama">
 
+    <include
+        layout="@layout/appbarbangla"/>
 
 
     <TextView
@@ -23,9 +25,16 @@
         android:textStyle="bold"/>
 
 
+
+
+
+
+
+
+
     <ListView
         android:id="@+id/listViewId"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

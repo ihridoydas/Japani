@@ -8,6 +8,12 @@
     tools:context=".N3.Grama.N3ViewIntentGrama">
 
 
+    <include
+        layout="@layout/appbarbangla"/>
+
+
+
+
 
     <TextView
         android:textColor="#3F51B5"

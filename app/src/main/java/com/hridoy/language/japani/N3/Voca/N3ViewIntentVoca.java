@@ -1,6 +1,7 @@
 package com.hridoy.language.japani.N3.Voca;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -27,6 +28,7 @@ import java.util.Locale;
 public class N3ViewIntentVoca extends AppCompatActivity {
 
 
+    private Toolbar toolbar;
     private TextToSpeech mTTS;
 
     private ListView listView;
@@ -49,6 +51,11 @@ public class N3ViewIntentVoca extends AppCompatActivity {
         setContentView(R.layout.activity_n3_view_intent_voca);
 
 
+
+        toolbar = findViewById(R.id.mytoolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 

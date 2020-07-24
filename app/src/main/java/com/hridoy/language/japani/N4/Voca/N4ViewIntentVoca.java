@@ -1,6 +1,7 @@
 package com.hridoy.language.japani.N4.Voca;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -26,6 +27,7 @@ import java.util.Locale;
 public class N4ViewIntentVoca extends AppCompatActivity {
 
 
+    private Toolbar toolbar;
 
     private TextToSpeech mTTS;
 
@@ -47,6 +49,11 @@ public class N4ViewIntentVoca extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_n4_view_intent_voca);
 
+
+        toolbar = findViewById(R.id.mytoolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 

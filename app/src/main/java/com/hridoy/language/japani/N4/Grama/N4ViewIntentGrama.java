@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.hridoy.language.japani.DatabaseAccess;
 import com.hridoy.language.japani.R;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 
 public class N4ViewIntentGrama extends AppCompatActivity {
 
+    private Toolbar toolbar;
     private ListView listView;
 
     public EditText name;
@@ -39,6 +41,11 @@ public class N4ViewIntentGrama extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_n4_view_intent_grama);
+
+        toolbar = findViewById(R.id.mytoolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 

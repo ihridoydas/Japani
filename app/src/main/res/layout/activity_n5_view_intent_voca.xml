@@ -7,6 +7,10 @@
     android:orientation="vertical"
     tools:context=".N5.Voca.N5ViewIntentVoca">
 
+    <include
+        layout="@layout/appbarbangla"/>
+
+
     <TextView
 
         android:id="@+id/lesson_num"

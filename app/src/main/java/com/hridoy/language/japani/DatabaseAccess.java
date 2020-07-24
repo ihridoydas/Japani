@@ -208,6 +208,7 @@ public class DatabaseAccess {
 //--------------------N5 Vocabulay---------------------------------------
 
 
+
 //--------------------N5 Grammer---------------------------------------
 
 
@@ -386,7 +387,210 @@ public class DatabaseAccess {
     }
 
 
+    //--------------------N5 Grammer---------------------------------------
 
+//--------------------N5 bangla Grammer---------------------------------------
+
+
+    public static Cursor showN5BGramaLesson1(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson1 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN5BGramaLesson2(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson2 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN5BGramaLesson3(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson3 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN5BGramaLesson4(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson4 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson5(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson5 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson6(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson6 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson7(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson7 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson8(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson8 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson9(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson9 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson10(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson10 ",null);
+
+        return c;
+    }
+
+    public static Cursor showN5BGramaLesson11(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson11 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson12(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson12 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson13(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson13 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson14(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson14 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson15(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson15 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson16(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson16 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson17(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson17 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson18(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson18 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson19(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson19 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson20(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson20 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson21(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson21 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson22(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson22 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson23(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson23 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson24(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson24 ",null);
+
+        return c;
+    }
+
+
+    public static Cursor showN5BGramaLesson25(){
+
+        c= db.rawQuery("SELECT * FROM N5Bglesson25 ",null);
+
+        return c;
+    }
+
+
+
+
+//--------------------N5 bangla Grammer---------------------------------------
 
 
 
@@ -1074,6 +1278,8 @@ public class DatabaseAccess {
 
         return c;
     }
+
+
 
 //--------------------N3 Grammer---------------------------------------
 

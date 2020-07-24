@@ -1,6 +1,7 @@
 package com.hridoy.language.japani.N5.kanji;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 
 public class N5ViewIntentKanji extends AppCompatActivity {
 
+    private Toolbar toolbar;
 
     private ListView listView;
 
@@ -42,6 +44,11 @@ public class N5ViewIntentKanji extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_n5_view_intent_kanji);
 
+
+        toolbar = findViewById(R.id.mytoolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 
