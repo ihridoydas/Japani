@@ -24,11 +24,13 @@
         </activity>
         <activity android:name=".ui.gallery.Katakana"
             android:label="Katakana"
+            android:screenOrientation="landscape"
             android:parentActivityName=".MainActivity"
             tools:ignore="InnerclassSeparator">
         </activity>
         <activity android:name=".ui.gallery.Hiragana"
             android:label="Hiragana"
+            android:screenOrientation="landscape"
             android:parentActivityName=".MainActivity"
             tools:ignore="InnerclassSeparator"/>
         <activity
