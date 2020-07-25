@@ -86,7 +86,7 @@ public class ListenConversation extends AppCompatActivity {
         mKSayBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mDisplaytext1.setText("いらつしゃませ");
+                mDisplaytext1.setText("いらっしゃいませ");
                 speak1();
             }
         });
