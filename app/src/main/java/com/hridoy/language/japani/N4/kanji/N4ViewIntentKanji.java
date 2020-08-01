@@ -191,18 +191,6 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji2() {
@@ -230,18 +218,6 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji3() {
@@ -269,18 +245,6 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji4() {
@@ -308,18 +272,7 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji5() {
@@ -347,18 +300,7 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji6() {
@@ -386,18 +328,7 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji7() {
@@ -425,18 +356,7 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji8() {
@@ -464,18 +384,7 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
 
@@ -504,18 +413,7 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Kanji10() {
@@ -543,17 +441,6 @@ public class N4ViewIntentKanji extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 }

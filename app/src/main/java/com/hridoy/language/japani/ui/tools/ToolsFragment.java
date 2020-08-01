@@ -2,6 +2,8 @@ package com.hridoy.language.japani.ui.tools;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -29,6 +31,7 @@ public class ToolsFragment extends Fragment {
 
     private TextView mSelfIntroText;
     private TextView mSelfIntroAnsText;
+    private Button mEmbassyAppBtn;
 
     private Button mselfInroSayBtn;
     private Button mPreEnSayBtn;
@@ -66,6 +69,7 @@ public class ToolsFragment extends Fragment {
 
         mselfInroSayAnsBtn=root.findViewById(R.id.selfIntroAnsSayBtn);
         mPreEnSayAnsBtn=root.findViewById(R.id.selfIntroAnsEnBtn);
+        mEmbassyAppBtn=root.findViewById(R.id.embassyapp);
 
 
         mTTS = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
@@ -129,6 +133,19 @@ public class ToolsFragment extends Fragment {
                 mSelfIntroAnsText.setText(" Nice to meet you .... I am Lido. I'm Bangladeshi.I am from Dhaka. 22 years old. I am a student.My father's name is Bishato. My mother's name is puspa. I Like to look at football. I studied Japanese in 6 months. I would like to go to Japan because I would like to study at a university in Japan.");
             }
         });
+
+
+        mEmbassyAppBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent embassy = new Intent(Intent.ACTION_VIEW);
+                embassy.setData(Uri.parse("market://details?id="+"com.hridoy.info.japanembassyinterviewquestion"));
+                startActivity(embassy);
+            }
+        });
+
+
+
 
 
         return root;

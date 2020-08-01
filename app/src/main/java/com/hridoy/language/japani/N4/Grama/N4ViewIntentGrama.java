@@ -368,18 +368,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-              Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama2() {
@@ -407,18 +396,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama3() {
@@ -446,18 +424,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama4() {
@@ -485,18 +451,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama5() {
@@ -524,18 +479,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama6() {
@@ -563,18 +507,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama7() {
@@ -602,18 +535,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama8() {
@@ -641,18 +563,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama9() {
@@ -680,18 +590,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama10() {
@@ -719,18 +617,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
 
@@ -760,18 +646,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama12() {
@@ -799,18 +673,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama13() {
@@ -838,18 +701,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama14() {
@@ -877,18 +728,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama15() {
@@ -916,18 +755,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama16() {
@@ -955,18 +783,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama17() {
@@ -994,18 +811,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama18() {
@@ -1033,18 +839,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama19() {
@@ -1072,18 +867,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama20() {
@@ -1111,18 +894,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
 
@@ -1152,18 +923,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama22() {
@@ -1191,18 +950,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama23() {
@@ -1230,18 +978,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama24() {
@@ -1269,18 +1005,7 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     private void LessonN4Grama25() {
@@ -1308,18 +1033,6 @@ public class N4ViewIntentGrama extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String selectedValue =parent.getItemAtPosition(position).toString();
-
-
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
 

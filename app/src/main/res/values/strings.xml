@@ -11,9 +11,14 @@
     <string name="menu_gallery">Japanese Alphabet </string>
     <string name="menu_slideshow">Listening</string>
     <string name="menu_tools">Embassy Preparation</string>
-    <string name="menu_share">Share</string>
+    <string name="menu_share">Counting Number in Japanese</string>
     <string name="menu_send">About Developer</string>
     <string name="lesson_number">Lesson Number</string>
     <string name="bangla"> বাংলা গ্রামার</string>
     <string name="english">English</string>
+
+
+    <string name="my_string">Hello, I am Hridoy Chandra Das, Currently studying at Meisei Institute of Cybernetics in Japan. And I\'m Senior Web Developer and Apps Developer,Working in the field for about 5 years now.I am 24 years old, living in Japan.</string>
+    <string name="software_engineer">Software Engineer</string>
+    <string name="hridoy_chandra_das">Hridoy Chandra Das</string>
 </resources>

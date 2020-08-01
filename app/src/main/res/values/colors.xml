@@ -7,4 +7,7 @@
     <color name="tabtextColor">#0E0505</color>
     <color name="tabIndecateColor">#8A0000</color>
     <color name="cardColor">#054E2D</color>
+
+    <color name="colorFollow">#28d96d</color>
+    <color name="colorProfile">#fbc131</color>
 </resources>

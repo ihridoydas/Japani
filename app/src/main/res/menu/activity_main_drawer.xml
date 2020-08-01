@@ -22,11 +22,11 @@
             android:title="@string/menu_tools" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Others">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_baseline_looks_one_24"
                 android:title="@string/menu_share" />
             <item
                 android:id="@+id/nav_send"

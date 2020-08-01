@@ -12,6 +12,8 @@ public class WebViewMain extends AppCompatActivity {
 
     private WebView webView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,7 @@ public class WebViewMain extends AppCompatActivity {
 
         //Start This is connect to xml file
         webView = findViewById(R.id.webviewId);
+
 
         webView.setWebViewClient(new WebViewClient());
         WebSettings webSettings =webView.getSettings();
