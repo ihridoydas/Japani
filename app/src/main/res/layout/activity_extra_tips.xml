@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtraTips">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/appbarbanglabutton"/>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="8">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="১. Verb এর て From + もいいですか হয়। \n
+২. すぎます অর্থ অতিরিক্ত। ইহা যুক্ত হয় ます From এর ます বাদ দিয়ে বাকি অংশের সাথে। এবং い Adjective এর い বাদ দিয়ে বাকি অংশের すぎます সাথে যুক্ত হয়। \n
+৩. なります এর আগে সাধারনত に হয়।\n
+৪. কোথাও করতে যাবো/করতে আসবো বোঝালে にいきます/にきます হয়। にいきます/にきます এর আগে সব সময় Verb এর ます বাদ দিয়ে বাকি অংশ বসে। \n
+৫. কোন বস্তু দিয়ে কাজ করা বুঝালে সেই বস্তুর পরে で বসে। \n
+৬. もう এর পরে সব সময় Verb এর Past Tense হয়। \n
+৭. Verb এর た From (অভিজ্ঞতা) + ことがあります \n
+৮. Verb এর て From (নিষেধ) + はいけません হয়। \n
+৯. どのくらい/どれくらい এই দুইটা শব্দ একই অর্থ প্রকাশ করে। \n
+১০. Adjective এর আগে সাধারনত Partical が বসে। \n
+১১. একই কাজ করতে করতে আরেকটি কাজ করলে আগের Verb এর সাথে ながら যুক্ত হয়। এটি সাধারনত ます From এর ます বাদ দিয়ে বাকি অংশের সাথে বসে। \n
+১২. から এর আগে Verb এর て From বসে। \n
+১৩. Request করা বুঝালে Verb এর て From + ください বসে। \n
+১৪. না বোধক Imperative বাক্যে Verb এর ない From + Verb এর でくだいさい বসে। \n
+১৫. Verb এর আগে い Adjective থাকিলে い উঠে く হয়। এবং な থাকিলে な উঠে に হয়। \n
+১৬. とき/まえに এর পূর্বে Verb এর Dictionary From হয়। \n
+১৭. মাথায় পড়লে かぶります, শরীরে পড়লে きます, কোমরে পড়লে はきます এবং হাতে/কানে/গলায়/টাই পড়লে します/しめます হয়। \n
+১৮. ছাতা খোলা বুঝালে かさ は さします হবে। \n
+১৯. শরীর থেকে কোনকিছু খুলে ফেললে のぎます এবং চশমা খোলা বোঝালে はずします হয়। \n
+২০. জীবনের প্রথম কোন কিছু করলে はずします হয়। \n
+২১. লম্বা মানুষ বোঝালে せがたかい হয়। \n
+২২. খাটো মানুষ বুঝালে せがひくい হয়। \n
+২৩. দাঁত ব্রাশ করা বুঝালে は を みがきます হয়। \n
+২৪. কাপড়/হাত/পা ধোয়া বুঝাইলে せんたくします/あらいます হয়। \n
+২৫. রুম পরিষ্কার করা বুঝালে そうじをします হয়। \n
+২৬. মোড় নেওয়া বুঝালে まがります হয়। \n
+২৭. ঠাণ্ডা/সর্দি লাগা বুঝালে かぜ を ひきます হয়। \n
+২৮. বাতাস বইছে বুঝালে かぜをふきます হয়। \n
+২৯.ほうが এর আগে সব সময় の বসে। \n
+৩০. কোন স্থানে কোন কাজ করা বুঝালে সেই স্থানের পরে সব সময় Partical で বসে। \n
+৩১. একাধিক Noun কে দ্বারা と/や দ্বারা যুক্ত করা হয়। তবে など থাকলে や ব্যবহার হবে। \n
+৩২. স্থান ও যানবাহন পার হওয়া বুঝালে とあります হয়। とあります এর পূর্বে Partical を বসে। \n
+৩৩. নির্দিষ্ট করে বুঝালে Partical が বসে। অনির্দিষ্ট করে বুঝলে か বসে। \n
+৩৪. ব্রিজ বা রাস্তা পার হওয়া বুঝালে わたります হয়। \n
+৩৫. অনেক গুলো い Adjective একই বাক্যে থাকলে শেষেরটি ছাড়া আগের গুলোতে い উঠে く হয়। এবং অনেক গুলো な একই বাক্যে থাকলে শেষেরটি ছাড়া আগের গুলোতে な উঠে で হয়। \n
+৩৬. কোন বস্তু/ইতর প্রানি বুঝালে たくさん হয়। \n
+৩৭. স্পর্শ করে ঠাণ্ডা বুঝালে つめたい এবং আবহাওয়া জনিত ঠাণ্ডা বুঝালে さむい হয়। \n
+৩৮. কোন কিছু হাতে হাতে দিলে わたします হয়। \n
+৩৯. কোন কিছু করতে চাই বুঝালে ます From এর ます বাদ দিয়ে বাকি অংশের সাথে たい যুক্ত হয়। \n
+৪০. বাক্যের Object এর পরে Partical を বসে। を দিয়ে Object আলাদা করা হয়। \n
+৪১. কোন কিছু চাওয়ার সময় বস্তুর নাম + をください বলতে হয়। \n
+৪২.もうদিয়ে প্রশ্ন করে উত্তর Negative পাওয়া গেলে いいえまだです হবে। \n
+৪৩. সঠিক এবং ভুলের মধ্যে তুলনা করার সময় ただし ব্যবহার করা হয়। \n
+৪৪. সঠিক সময় কোন কিছু করা বুঝালে ちょうど ব্যবহার করা হয়। \n
+৪৫. না বোধক শব্দের আগে সব সময় না বোধক বসে। \n
+৪৬. উঁচু জাইগায় উঠা বুঝাতে のぼります ব্যবহার হয়। \n
+৪৭. Verb এর Dictionary From + ことができます হয়। \n
+৪৮. ほしい এর আগে সব সময় Partical が বসে। \n
+৪৯. Verb এর ます এর From ます বাদ দিয়ে বাকি অংশের সাথে でしょう যুক্ত হয়। \n
+৫০. でしょう এর আগে অনুমান মূলক শব্দ বসে। যেমন たぶん \n
+৫১. আঠা দিয়ে কোন কিছু লাগানো বুঝালে はります হয়। \n
+৫২. কোন কিছু তুলে দেওয়ার জন্য অনুরোধ করলে とります হয়। \n
+৫৩. শারীরিক অবস্থা/যন্ত্রপাতির অবস্থা বুঝাতে ちょうし ব্যবহার হয়। \n
+৫৪. কোন কিছুর নাম জিজ্ঞেস করার সময় という + বস্তুর নাম হবে। \n
+৫৫. একসাথে অনেক গুলো কাজ করলে Verb এর り From হয়। Verb এর り From এর り যোগ হয় Verb এর た From এর সাথে। এবং শেষে します যুক্ত হয়। \n
+৫৬. কাউকে ফোনে চাওয়ার সময় লোকের নাম + を おねがいします বলতে হয়। \n
+৫৭. あと এর আগে সব সময় Verb এর た From বসে। \n
+৫৮. さようなら এর পরে সব সময় Future Tense হয়। \n
+৫৯. অবস্থান অর্থে না বোধক হলে どこにも হবে এবং চলমান অর্থে না বোধক হলে どこへも হবে। \n
+৬০. আপন জনদেরকে কোন কিছু দেখানোর সময় ほら বলে ডাকা হয়। \n
+৬১. しか একটি না বোধক শব্দ।しか অর্থ ছাড়া বা ব্যতিত। \n
+৬২. じぶんとなり এর পরে Partical で বসে। \n
+৬৩. でしょう যোগ হয় い Adjective এর い সহ এবং な Adjective এর な উঠে বাকি অংশের সাথে でしょう বসে। \n
+৬৪. から এর আগে な Adjective এর な উঠে だ হবে এবং Noun এর ক্ষেত্রেও だ বসবে। \n
+৬৫. こと এর আগে Verb এর Dictionary From বসে। \n
+৬৬. います এবং くださいএর আগে Verb এর て From হয়। \n
+৬৭. Positive বাক্যের মাঝে だけ থাকলে তার পূর্বে Noun হবে। \n
+৬৮. বাক্যের মাঝে ために থাকলে এর পূর্বে Verb এর Dictionary From হবে। \n
+৬৯. ために এর পূর্বে Noun থাকলে Noun + の + ために হবে। \n"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        //Kaiwa 1 end
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>
+

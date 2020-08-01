@@ -108,6 +108,7 @@
 
 
             <Button
+                android:id="@+id/join_fb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -120,7 +121,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/Youtube"
+
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -143,6 +144,7 @@
 
 
             <Button
+                android:id="@+id/Youtube"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -171,18 +173,19 @@
                 android:layout_height="wrap_content"
 
                 android:gravity="center_horizontal"
-                android:text="How To Improve Japanese (some Tips)"
+                android:text="Some Extra Grammar Tips (Only Bangla)"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
 
             <Button
+                android:id="@+id/extra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
 
-                android:text="How to"
+                android:text="Extra Tips"
                 android:background="@color/colorPrimary"
                 android:textColor="#FFFFFF" />
 

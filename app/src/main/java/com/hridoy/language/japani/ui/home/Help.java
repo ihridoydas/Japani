@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.Manifest;
 import android.app.DownloadManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
@@ -16,7 +17,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.hridoy.language.japani.ExtraTips;
+import com.hridoy.language.japani.N5.N5Bangla;
 import com.hridoy.language.japani.R;
+import com.hridoy.language.japani.WebViewMain;
 
 import java.util.Objects;
 
@@ -27,6 +31,9 @@ public class Help extends AppCompatActivity {
     private Toolbar toolbar;
 
     Button mDownloadBtn;
+    Button mJoinfbBtn;
+    Button mYoutubeBtn;
+    Button mExtraBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +45,20 @@ public class Help extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+
+        mJoinfbBtn = findViewById(R.id.join_fb);
+
+
+        mJoinfbBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent facebookIntent =openFacebook(Help.this);
+                startActivity(facebookIntent);
+
+            }
+        });
 
         mDownloadBtn = findViewById(R.id.downlodBtn);
 
@@ -65,6 +86,49 @@ public class Help extends AppCompatActivity {
                 }
             }
         });
+
+
+
+        mYoutubeBtn = findViewById(R.id.Youtube);
+
+
+        mYoutubeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent youIntent =new Intent(Help.this, WebViewMain.class);
+                startActivity(youIntent);
+            }
+        });
+
+
+        mExtraBtn = findViewById(R.id.extra);
+
+
+        mExtraBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent ExIntent =new Intent(Help.this, ExtraTips.class);
+                startActivity(ExIntent);
+            }
+        });
+
+    }
+
+
+    public static Intent openFacebook(Context context){
+
+        try{context.getPackageManager()
+                .getPackageInfo("com.facebook.katana",0);
+            return new Intent(Intent.ACTION_VIEW, Uri.parse("fb://groups/1540547536216864"));
+        }catch (Exception e){
+            return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/groups/1540547536216864"));
+
+        }
+
     }
 
     private void startDownloading() {

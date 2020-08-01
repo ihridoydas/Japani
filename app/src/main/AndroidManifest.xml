@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.hridoy.language.japani">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.Help"></activity>
+        <activity android:name=".ExtraTips"
+
+            android:label="Extra Tips(Grammar)"
+            android:parentActivityName=".ui.home.Help"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity android:name=".WebViewMain" />
+        <activity android:name=".ui.home.Help" />
         <activity
             android:name=".ui.slideshow.ListenConversation"
             android:label="Daily Listening"
@@ -24,13 +32,13 @@
             android:name=".ui.slideshow.ListenPractise"
             android:label="Daily Listening"
             android:parentActivityName=".MainActivity"
-            tools:ignore="InnerclassSeparator"></activity>
+            tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".ui.gallery.Katakana"
             android:label="Katakana"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="landscape"
-            tools:ignore="InnerclassSeparator"></activity>
+            tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".ui.gallery.Hiragana"
             android:label="Hiragana"
