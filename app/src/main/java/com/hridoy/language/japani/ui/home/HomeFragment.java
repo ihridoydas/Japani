@@ -100,6 +100,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         else if(v.getId()==R.id.help){
 
 
+            startActivity(new Intent(getActivity(),Help.class));
         }
 
     }

@@ -5,6 +5,8 @@
     app:elevation="0dp"
     android:layout_height="match_parent">
 
+
+
     <View
         android:id="@+id/bg_top_header"
         app:elevation="0dp"

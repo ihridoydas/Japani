@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.hridoy.language.japani" >
+    package="com.hridoy.language.japani">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -10,29 +13,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-
-        <activity android:name=".ui.slideshow.ListenConversation"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.home.Help"></activity>
+        <activity
+            android:name=".ui.slideshow.ListenConversation"
             android:label="Daily Listening"
             android:parentActivityName=".MainActivity"
-            tools:ignore="InnerclassSeparator"/>
-
-        <activity android:name=".ui.slideshow.ListenPractise"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ui.slideshow.ListenPractise"
             android:label="Daily Listening"
             android:parentActivityName=".MainActivity"
-            tools:ignore="InnerclassSeparator">
-        </activity>
-        <activity android:name=".ui.gallery.Katakana"
+            tools:ignore="InnerclassSeparator"></activity>
+        <activity
+            android:name=".ui.gallery.Katakana"
             android:label="Katakana"
-            android:screenOrientation="landscape"
             android:parentActivityName=".MainActivity"
-            tools:ignore="InnerclassSeparator">
-        </activity>
-        <activity android:name=".ui.gallery.Hiragana"
+            android:screenOrientation="landscape"
+            tools:ignore="InnerclassSeparator"></activity>
+        <activity
+            android:name=".ui.gallery.Hiragana"
             android:label="Hiragana"
-            android:screenOrientation="landscape"
             android:parentActivityName=".MainActivity"
-            tools:ignore="InnerclassSeparator"/>
+            android:screenOrientation="landscape"
+            tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".N5.GramaBangla.N5ViewIntentGramaBangla"
             android:label=" N5 Bangla Grammer"
@@ -116,7 +120,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
