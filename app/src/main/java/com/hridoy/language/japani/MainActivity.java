@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.cardview.widget.CardView;
@@ -25,9 +26,38 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    UpMenu upmenu = new UpMenu(this);
+    private Menu menu;
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(item.getItemId()==R.id.action_rate_me){
+
+            upmenu.rate();
+        }else if(item.getItemId()==R.id.action_more_apps){
+
+            upmenu.moreapps();
+
+        }
+        else if (item.getItemId()==R.id.action_share){
+
+            upmenu.share();
+
+        }
+        return super.onOptionsItemSelected(item);
+
+
+
+    }
+
+
+
+
 
 
     @Override
@@ -62,12 +92,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        this.menu = menu;
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
