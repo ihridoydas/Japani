@@ -260,16 +260,17 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
+
+
     }
 
     private void Lesson3() {
@@ -297,14 +298,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
@@ -333,14 +333,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
@@ -369,14 +368,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
@@ -405,14 +403,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
@@ -441,14 +438,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
@@ -477,14 +473,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
@@ -513,14 +508,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
@@ -549,14 +543,13 @@ public class N3ViewIntentVoca extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String selectedValue =parent.getItemAtPosition(position).toString();
-
-                Toast.makeText(getApplicationContext(),"Selected Value " + selectedValue,Toast.LENGTH_LONG).show();
-
+                mTTS.speak(selectedValue, TextToSpeech.QUEUE_FLUSH, null);
+                return false;
             }
         });
     }
