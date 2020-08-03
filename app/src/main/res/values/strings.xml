@@ -21,4 +21,7 @@
     <string name="my_string">Hello, I am Hridoy Chandra Das, Currently studying at Meisei Institute of Cybernetics in Japan. And I\'m Senior Web Developer and Apps Developer,Working in the field for about 5 years now.I am 24 years old, living in Japan.</string>
     <string name="software_engineer">Software Engineer</string>
     <string name="hridoy_chandra_das">Hridoy Chandra Das</string>
+
+    <string name="exit">Are you Sure?\nありがとうございました。</string>
+    <string name="exit_name">Exit</string>
 </resources>

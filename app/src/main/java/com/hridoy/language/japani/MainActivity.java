@@ -1,5 +1,6 @@
 package com.hridoy.language.japani;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
@@ -108,4 +110,42 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-}
+
+
+
+    //Start This is connect to onBackPressed
+
+    @Override
+    public void onBackPressed() {
+
+
+            AlertDialog.Builder builder =new AlertDialog.Builder(this);
+            builder.setTitle(R.string.exit_name);
+            builder.setMessage(R.string.exit);
+
+            builder.setPositiveButton("EXIT", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    finish();
+                }
+            });
+
+            builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+
+            AlertDialog dialog = builder.show();
+        }
+
+    }
+
+    //End This is connect to onBackPressed
+
+
+
+
+
+
